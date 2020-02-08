@@ -1,0 +1,24 @@
+.{
+magin:0;
+padding:0;
+}
+#header{
+padding:30px;
+width:80%;
+height:50px;
+color:white;
+text-align:center;
+background:#33FFCC;
+}
+#lab{
+float:right500px;
+}
+#div{
+width:100%;
+
+}
+#login{
+margin:5% auto 15% auto;
+width:40%;
+font-size:15px;
+}

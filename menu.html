@@ -1,0 +1,90 @@
+<html>
+<head>
+<style>
+header
+{
+  background-color:blue;
+color:white;
+line-height:70px;
+margin:-10px;
+
+}
+span{
+padding-left:1000px;
+}
+footer
+{
+background-color: gray;
+
+font-size:20px;
+padding:10px;
+color:black;
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+text-align:left;
+
+
+}
+button
+{
+background-color:blue;
+color:white;
+height:40px;
+}
+
+
+</style>
+<script>
+function validateform()
+{
+var x = /^[0-9]+$/;
+var y = document.forms.myform.name.value;
+if(y == "" || y == null)
+{
+alert("enter name");
+return false;
+}
+else if(!(document.forms.myform.price.value).match(x))
+{
+alert("price should be number");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" action="" onsubmit="return validateform()" method="">
+
+<header style=font-size:40px> truYum <img border="0" src="truYum.gif" width="40">
+
+<a href="#" style="padding-left:850px; color:white; padding-top:50px;font-size:40px;">Menu</a></header>
+</div>
+<h2>Edit Menu Items </h2> <br>
+<form action ="Name">
+<div>Name<br><input type="text" name="name" style="width:400px;" ></div><br>
+<table border=0>
+<tr>
+<td> price(Rs.)</td>
+<td> Active</td>
+<td> Date of Launch</td>
+<td> Category </td>
+</tr>
+<tr>
+<td><input type="text" name="price" style="width:120px;"></td>
+<td><input type="radio" name="active">Yes
+<input type="radio" name="active">No</td>
+<td><input type="text" name="Date of Launch" style="width:120px;"></td>
+<td><select>
+<option> Main Course</option>
+<option> Starters</option>
+<option> Dessert</option>
+<option> Drinks</option></select></td>
+</table>
+<br><input type="checkbox" name="fd" checked>Free Delivery
+<br><button type="submit"> Save </button>
+<div><footer> Copyright@2019</footer></div>
+</form>
+</body>
+</html

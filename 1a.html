@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+ function myFun() {
+ var x = document.getElementById("myDIV");
+ if(x.innerhtml == "Hello!"){
+ x.innerHTML = "Well Done!";
+ } else
+ {
+ x.innerHTML = "Hello!";
+ }
+ }
+</script>
+</head>
+<body>
+<button onclick="myFun()">Click</button>
+<p id="myDIV">Hello</p>
+
+</body>
+</html>

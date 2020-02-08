@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+	function validation(){
+		var n = document.forms.myForm.na.value;
+		if (n == "" || n == null)
+		{
+			alert("enter name");
+			return false;
+		}
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="" method="" onsubmit="return validation()" >
+<input type="text" name="na" >
+<input type="submit" >
+</form>
+</body>
+</html>
